@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".view.RegistroFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginTop="20dp">
+
+            <EditText
+                android:id="@+id/edit_text_cep"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:hint="Informe o CEP - Ex: 63860000"
+                android:gravity="left"
+                android:layout_gravity="left"
+                android:inputType="number"
+                android:maxLength="8"
+              />
+
+            <ImageView
+                android:id="@+id/image_pesquisa"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_pesquisa_24dp"
+                android:layout_gravity="end|center"
+                style="@style/Widget.AppCompat.Button.ButtonBar.AlertDialog"
+                android:layout_marginLeft="30dp"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="8dp"
+            android:layout_gravity="center"
+            android:gravity="center">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Registrando a quantidade de chuva"
+                android:textAlignment="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="40dp"
+                style="@style/themeFonteToolbar"
+                android:textSize="20sp"/>
+
+
+            <EditText
+                android:id="@+id/edit_text_nome_cidade"
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:hint="Informe a cidade"
+                android:inputType="text"
+                android:padding="4dp"
+                android:background="@drawable/bgedittext"
+                android:layout_marginTop="5dp"
+            />
+
+            <EditText
+                android:id="@+id/edit_text_nome_estado"
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:hint="Informe estado"
+                android:inputType="text"
+                android:padding="4dp"
+                android:background="@drawable/bgedittext"
+                android:layout_marginTop="5dp"
+                />
+
+
+            <EditText
+                android:id="@+id/edit_text_nome_bairro"
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:hint="Informe seu bairro"
+                android:inputType="text"
+                android:padding="4dp"
+                android:background="@drawable/bgedittext"
+                android:layout_marginTop="5dp"
+                />
+
+
+            <EditText
+                android:id="@+id/edit_text_chuva_mm"
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:hint="chuva em mm"
+                android:inputType="numberDecimal"
+                android:padding="4dp"
+                android:background="@drawable/bgedittext"
+                android:layout_marginTop="5dp"
+                />
+
+
+            <EditText
+                android:id="@+id/edit_text_data_atual"
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:hint="Data atual"
+                android:inputType="text"
+                android:padding="4dp"
+                android:background="@drawable/bgedittext"
+                android:layout_marginTop="5dp"
+                android:enabled="false"
+                />
+
+
+            <EditText
+                android:id="@+id/edit_text_hora_atual"
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:hint="Hora atual"
+                android:inputType="text"
+                android:padding="4dp"
+                android:background="@drawable/bgedittext"
+                android:layout_marginTop="5dp"
+                android:enabled="false"
+                />
+
+
+        </LinearLayout>
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_enviar_dados"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="24dp"
+            android:padding="16dp"
+            app:cardCornerRadius="4dp"
+            app:cardElevation="10dp"
+            android:foreground="?attr/actionBarItemBackground"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:clickable="true">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Salvar Registro"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:padding="10dp"
+                android:textColor="@android:color/white"
+                />
+
+        </androidx.cardview.widget.CardView>
+
+
+
+     </LinearLayout>
+
+ </ScrollView>
+
+</FrameLayout>

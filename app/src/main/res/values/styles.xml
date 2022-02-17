@@ -1,0 +1,29 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+
+    <style name="themeFonteToolbar" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="fontFamily">@font/comicneuebold</item>
+
+    </style>
+
+
+    <style name="themeFonteRecyclerView" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="fontFamily">@font/robotomediumitalic</item>
+
+    </style>
+
+
+    <style name="themeFonteTelaSplash" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="fontFamily">@font/lobsterregular</item>
+
+    </style>
+
+</resources>

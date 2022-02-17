@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        app:cardCornerRadius="4dp"
+        app:cardElevation="8dp"
+        app:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:padding="4dp"
+            android:layout_gravity="center"
+            android:gravity="center">
+
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:src="@drawable/iconlogoadapter" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:orientation="horizontal"
+                android:padding="8dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/text_cidade"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Cidade"
+                        style="@style/themeFonteRecyclerView"/>
+
+                    <TextView
+                        android:id="@+id/text_bairro"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Bairro"
+                        style="@style/themeFonteRecyclerView"/>
+
+                    <TextView
+                        android:id="@+id/text_chuva"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Chuva "
+                        style="@style/themeFonteRecyclerView"/>
+
+
+                    <TextView
+                        android:id="@+id/text_data_hora"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="10sp"
+                        android:text="Data e hora "
+                        style="@style/themeFonteRecyclerView"/>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+
+                    <TextView
+                        android:id="@+id/text_estado"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="CE"
+                        style="@style/themeFonteRecyclerView"/>
+
+
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/image_excluir"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_weight="1"
+                android:src="@drawable/ic_delete_24dp"
+                android:padding="4dp"
+                style="@style/Widget.AppCompat.Button.ButtonBar.AlertDialog"/>
+
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/cardview_shadow_start_color"/>
+
+</LinearLayout>
