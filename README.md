@@ -7,3 +7,6 @@
 - smartTabLayout
 - ItextPdf
 
+## Arquitetura
+
+- MVC (Model - View - Controller)
